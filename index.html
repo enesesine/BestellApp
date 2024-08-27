@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Bestellseite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Material/Favicon/favicon.ico"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img src="./Material/Logo/Bestell App- Logo.svg" alt="Logo" id="logo" />
+      <h1 id="headerTitle">Pizzeria Bella Pistazia</h1>
+    </header>
+    <div id="headerImage" class="bannerImage">
+      <img src="pizza-bg.jpg" alt="Restaurant Banner" />
+      <div class="overlay-text">Guten Hunger!</div>
+    </div>
+
+    <div id="infoBanner">
+      <p>Lieferzeit: 45 - 60 Minuten | ⭐⭐⭐⭐ | Frankfurt am Main</p>
+    </div>
+
+    <main id="main-content">
+      <div id="dishContainer"></div>
+      <div id="cartWrapper">
+        <div id="cart">
+          <div class="cartHeadline">
+            <h3>Warenkorb</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button id="showCartButton" onclick="toggleCart()">
+      Warenkorb ansehen (0)
+    </button>
+
+    <div id="cartOverlay">
+      <div id="cartOverlayContent">
+        <div id="cart">
+          <div class="cartHeadline">
+            <h3>Warenkorb</h3>
+          </div>
+        </div>
+        <button id="closeCartOverlayButton" onclick="toggleCart()">
+          Schließen
+        </button>
+      </div>
+    </div>
+
+    <div id="orderDialog">
+      <h2>Vielen Dank für Ihre Bestellung!</h2>
+      <p>Ihre Lieferung ist in 45-60 Minuten bei Ihnen. Guten Appetit!</p>
+      <button onclick="closeOrderDialog()">OK</button>
+    </div>
+
+    <footer id="footer">
+      <img src="./Material/Logo/Logo.png" alt="Logo" />
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">About</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
